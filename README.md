@@ -28,3 +28,9 @@ The primary source of Data used here is Data subcription.csv and this is an open
   4. Data Visualization
   5. Data Analysis
   6. Data Storytelling.
+
+### Data Cleaning and preparations
+  In the initial phase of the data claensing and preparations, we perform the following action;
+  1. Data loading and inspection
+  2. handling missing variables
+  3. Data cleansing and formatting.
