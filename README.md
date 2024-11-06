@@ -101,3 +101,5 @@ FROM [dbo].[Customer_Data]
 ```
 
 ### Data Visualization
+![Project 2 Table](https://github.com/user-attachments/assets/f4ab75af-3b06-4d90-9fdf-605290f648fa) ![Project 2 Pivot](https://github.com/user-attachments/assets/7042c529-7a4b-438a-a0f1-718d54150ed0)
+![Project 2 Graph](https://github.com/user-attachments/assets/073de925-caf0-4fac-91b4-3eb4742a046f)
