@@ -2,12 +2,15 @@
 ### Project Title:Customer Segmentation for a Subscription Service 
 
 ### Project Overview:
+---
 This project aims to generate insight into Customer Segmentation for a Subscription Service by using Excel, SQL, and Power BI to analyze subscription data, identify key customer segments(behavior), track subscription types, and identify key trends in cancellations and renewals to optimize customer retention strategies.
 
 ### Data Sources
+---
 The primary source of Data used here is Data subcription.csv and this is an open source data that was given by Incubator Hub 
 
 ### Tools Used
+---
 - Microsoft Excel is a versatile tool used for a wide range of numerical tasks, including: 
   1. for Data cleaning
   2. For Data Analysis 
@@ -30,13 +33,71 @@ The primary source of Data used here is Data subcription.csv and this is an open
   6. Data Storytelling.
 
 ### Data Cleaning and preparations
+---
   In the initial phase of the data cleansing and preparations, we perform the following action;
   1. Data loading and inspection
   2. handling missing variables
   3. Data cleansing and formatting.
 
  ### Exploratory Data Analysis
+ ---
 EDA involved the exploring of the data to answer some questions about the data such as;
 - What is Customer Behavior
 - What is the Subscription Types
 - What is the key trends in Cancellations and Renewals?
+
+  
+  ### Data Analysis
+---
+This is where we include some basic lines of code or queries or even some of the DAX expressions used during your analysis;
+
+``` SQL
+SELECT * FROM [dbo].[Customer_Data]
+
+SELECT Region, COUNT(CustomerID) AS TotalCustomers FROM [dbo].[Customer_Data]
+WHERE Region IS NOT NULL
+GROUP BY Region
+
+
+SELECT SubscriptionType, COUNT(CustomerID) AS TotalCustomers FROM [dbo].[Customer_Data]
+WHERE SubscriptionType IS NOT NULL
+GROUP BY SubscriptionType
+ORDER BY TotalCustomers DESC
+
+
+SELECT CustomerID,CustomerName,SubscriptionStart,SubscriptionEnd FROM [dbo].[Customer_Data]
+WHERE SubscriptionEnd IS NOT NULL
+AND SubscriptionEnd >= DATEADD(MONTH, -6, GETDATE())
+
+
+SELECT AVG(DATEDIFF(DAY, SubscriptionStart, SubscriptionEnd)) AS AverageSubscriptionDuration
+FROM [dbo].[Customer_Data]
+WHERE SubscriptionEnd IS NOT NULL
+
+
+SELECT CustomerID,CustomerName,SubscriptionStart,SubscriptionEnd
+FROM [dbo].[Customer_Data]
+WHERE DATEDIFF(DAY,SubscriptionStart,SubscriptionEnd) > 365
+
+
+SELECT SubscriptionType,SUM(Revenue) AS TotalRevenue
+FROM [dbo].[Customer_Data]
+WHERE SubscriptionType IS NOT NULL
+GROUP BY SubscriptionType
+ORDER BY TotalRevenue DESC
+
+
+SELECT TOP 3 Region,COUNT(Canceled) AS TotalCancellations
+FROM [dbo].[Customer_Data]
+WHERE SubscriptionEnd IS NOT NULL
+GROUP BY Region
+ORDER BY TotalCancellations DESC
+
+
+SELECT
+    SUM(CASE WHEN SubscriptionEnd IS  NULL THEN 1 ELSE 0 END) AS ActiveSubscriptions,
+    SUM(CASE WHEN SubscriptionEnd IS NOT NULL THEN 1 ELSE 0 END) AS CanceledSubscriptions
+FROM [dbo].[Customer_Data]
+```
+
+### Data Visualization
