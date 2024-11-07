@@ -125,10 +125,9 @@ FROM [dbo].[Customer_Data]
 
 ### Result and Findings
 ---
-The analysis reveals that Shoes was the top-selling product, with the South region demonstrating the highest demand, purchasing 546,300 units, significantly more than the East (37,200) and West (29,880) regions.
 
-The analysis indicates that the South region exhibited the highest overall Regional sales performance, generating a total revenue of 927,820. This significantly surpasses the sales figures for the East (485,925), North (387,000), and West (300,345) regions.This suggests a strong demand for various product categories, including shoes, socks, gloves, hats, jackets, and shirts, within the South region.
-
+The "Basic" plan is the most popular, with 16,921 subscribers, primarily in the East (8,488) and West (8,433) regions. The "Premium" plan is exclusively used in the South (8,446), while the "Standard" plan is limited to the West (8,420) 
+The "Basic" subscription plan is significantly more popular than the "Premium" and "Standard" plans, with 33,776,735 subscribers, compared to 16,899,064 and 16,864,376, respectively.
 The analysis reveals that February was the peak sales month in both 2023 and 2024, with sales of 247,500 and 298,800, respectively. In contrast, the lowest sales were recorded in April 2023 (7,425) and July 2024 (37,200). The total annual sales for 2023 and 2024 were 1,105,330 and 995,760, respectively and the Grand Total is 2,101,090.
 
 ### Recommendation
