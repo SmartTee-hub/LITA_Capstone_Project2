@@ -125,13 +125,14 @@ FROM [dbo].[Customer_Data]
 
 ### Result and Findings
 ---
-
+The "Basic" subscription plan generates the highest total revenue at 33,776,735, significantly surpassing the "Premium" (16,899,064) and "Standard" (16,864,376) plans.
+Regionally, the East region generated the highest revenue at 16,958,763, followed by the South (16,999,064), West (16,864,376), and North (16,817,972).
 The "Basic" plan is the most popular, with 16,921 subscribers, primarily in the East (8,488) and West (8,433) regions. The "Premium" plan is exclusively used in the South (8,446), while the "Standard" plan is limited to the West (8,420) 
-The "Basic" subscription plan is significantly more popular than the "Premium" and "Standard" plans, with 33,776,735 subscribers, compared to 16,899,064 and 16,864,376, respectively.
-The analysis reveals that February was the peak sales month in both 2023 and 2024, with sales of 247,500 and 298,800, respectively. In contrast, the lowest sales were recorded in April 2023 (7,425) and July 2024 (37,200). The total annual sales for 2023 and 2024 were 1,105,330 and 995,760, respectively and the Grand Total is 2,101,090.
-
+The East region had the highest number of cancellations (8,488), followed by the South (8,446) and North (8,433). Overall, there were 1,014,788 active subscriptions and 33,787 cancellations.
 ### Recommendation
 ---
-Recommendations: Capitalize on South's shoe demand, diversify product offerings in other regions, leverage peak sales periods, optimize inventory, analyze seasonal trends, and continuously adapt to market changes.
+The "Basic" plan is commended for its significant contribution to overall revenue, particularly in the East and West regions.
+
 ### Contribution
 ---
+The East region has made a substantial contribution to both subscriptions and cancellations, highlighting its importance in the overall performance.Contribution: The East region has made a substantial contribution to both subscriptions and cancellations, highlighting its importance in the overall performance.
